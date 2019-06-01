@@ -1,12 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <unistd.h>
+//#include <unistd.h>
 #include <stdint.h>
-#include <sys/time.h>
+//#include <sys/time.h>
 
 #include "pretty.h"
-
 // GS-2015-04-27-19:07 choosing  a small datatype (char,  short) seems
 // to yield poor results. (the bottleneck is not memory any more)
 
@@ -91,7 +90,8 @@ int main(int argc, char* argv[])
         clock_t end=clock();
         
         duration=(uintmax_t)end - (uintmax_t)begin ;
-        
+        duration /= CLOCKS_PER_SEC;//get second
+        duration *= 1000*1000;//get millisecond
         printf("%d repeats -> %s\n",repeats,pretty_time(duration,U_MICROSECONDS));
 
         if(duration > 1000)

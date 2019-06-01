@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "moutain", "moutain.vcxproj", "{ADBE3D07-6764-4A1A-8D02-2C19B1BC8981}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "mmoutain", "mmoutain.pyproj", "{73A9F2C9-A18D-4DA2-8929-D1E349EEA120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADBE3D07-6764-4A1A-8D02-2C19B1BC8981}.Release|Any CPU.ActiveCfg = Release|Win32
+		{ADBE3D07-6764-4A1A-8D02-2C19B1BC8981}.Release|x64.ActiveCfg = Release|x64
+		{ADBE3D07-6764-4A1A-8D02-2C19B1BC8981}.Release|x64.Build.0 = Release|x64
+		{ADBE3D07-6764-4A1A-8D02-2C19B1BC8981}.Release|x86.ActiveCfg = Release|Win32
+		{ADBE3D07-6764-4A1A-8D02-2C19B1BC8981}.Release|x86.Build.0 = Release|Win32
+		{73A9F2C9-A18D-4DA2-8929-D1E349EEA120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73A9F2C9-A18D-4DA2-8929-D1E349EEA120}.Release|x64.ActiveCfg = Release|Any CPU
+		{73A9F2C9-A18D-4DA2-8929-D1E349EEA120}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31D97BE2-44F9-40B3-8718-8B0A343FCC80}
+	EndGlobalSection
+EndGlobal

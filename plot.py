@@ -50,7 +50,7 @@ if len(sys.argv)==2:
     with open(sys.argv[1]) as f:
         data = f.read()
 else:
-    print "usage: plot.py DATAFILE"
+    print("usage: plot.py DATAFILE")
     sys.exit(1)
     
 data = data.splitlines()
