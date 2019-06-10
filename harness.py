@@ -10,7 +10,7 @@ import subprocess
 
 # repeat execution for this number of times, and only keep the median
 # value. (simplistic way to reduce noise)
-count = 3
+count = 20
 
 
 for mag in range(10,27): # from 2^10 (1kB) to 2^27 (64MB)
@@ -20,7 +20,7 @@ for mag in range(10,27): # from 2^10 (1kB) to 2^27 (64MB)
         results = []
         for repeat in range(count):
             #log=subprocess.check_output(["x64\Release\moutain.exe",str(size),str(stride)]);
-            p = subprocess.Popen("x64\Release\moutain.exe %s %s " % (str(size),str(stride)), shell=True, stdout=subprocess.PIPE, universal_newlines=True) 
+            p = subprocess.Popen("./benchmark %s %s " % (str(size),str(stride)), shell=True, stdout=subprocess.PIPE, universal_newlines=True) 
             p.wait()
             result_lines = p.stdout.readlines()
             for line in result_lines:
